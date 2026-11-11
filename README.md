@@ -77,7 +77,7 @@ Desktop Edition
 
 <br><br>
 
-<a href="https://github.com/InfinityDigitalTechnologies/InfinityWallet/releases/latest">
+<a href="https://github.com/InfinityDigitalTechnologies/InfinityWallet/releases/download/0.85.1/InfinityWallet-linux-x64-26.11.11.deb">
 <img src="https://img.shields.io/badge/⬇_DOWNLOAD-LINUX-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download for Linux">
 </a>
 
