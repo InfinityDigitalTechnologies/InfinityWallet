@@ -59,7 +59,7 @@ Desktop Edition
 
 <br><br>
 
-<a href="https://github.com/InfinityDigitalTechnologies/InfinityWallet/releases/latest">
+<a href="https://github.com/InfinityDigitalTechnologies/InfinityWallet/releases/download/0.85.1/InfinityWallet-macos-arm64-0.85.1.dmg">
 <img src="https://img.shields.io/badge/⬇_DOWNLOAD-MACOS-333333?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS">
 </a>
 
