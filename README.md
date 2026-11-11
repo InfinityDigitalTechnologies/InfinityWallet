@@ -41,7 +41,7 @@ Choose your operating system and download the latest version of Infinity Wallet.
 
 <br><br>
 
-<a href="https://github.com/InfinityDigitalTechnologies/InfinityWallet/releases/latest">
+<a href="https://github.com/InfinityDigitalTechnologies/InfinityWallet/releases/download/0.85.1/InfinityWallet-0.85.1-Setup-x64.exe">
 <img src="https://img.shields.io/badge/⬇_DOWNLOAD-WINDOWS-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows">
 </a>
 
